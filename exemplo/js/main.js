@@ -1,21 +1,21 @@
 function validaProc() {
 
     let matriz=[];
-    let linhas=3;
-    let colunas=3;
+    let coluna=3;
+    let linha=3;
 
     // Alimentando a matriz
-    for(i=0; i<linhas;i++) {
-            matriz[i]=[]
-        for(c=0; c< colunas; c++) {
-            matriz[i][c] = parseInt(prompt("Digite o valor da linha " +(i+1)+ " e coluna " +(c+1)));
+    for(c=0; c<coluna;c++) {
+            matriz[c]=[]
+        for(l=0; l< linha; l++) {
+            matriz[c][l] = parseInt(prompt("Digite o valor da linha " +(l+1)+ " e coluna " +(c+1)));
         }
     }
 
     // Imprimeiro os dados da matriz
-    for(i=0; i<linhas;i++) {
-        for(c=0; c< colunas; c++) {
-            document.write(matriz[i][c]+"&nbsp&nbsp")
+    for(c=0; c<coluna;c++) {
+        for(l=0; l< linha; l++) {
+            document.write(matriz[c][l]+"&nbsp&nbsp")
         }
             document.write("<br>");
     }
