@@ -3,22 +3,22 @@
 function validaProc() {
 
     let matriz=[];
-    let i, c;
-    let linhas=2;
-    let colunas=2;
+    let l, c;
+    let coluna=2;
+    let linha=2;
 
     // Alimentando a matriz
-    for(i=0; i<linhas;i++) {
-            matriz[i]=[];
-        for(c=0; c< colunas; c++) {
-            matriz[i][c] = (i+c)
+    for(c=0; c<coluna;c++) {
+            matriz[c]=[];
+        for(l=0; l< linha; l++) {
+            matriz[c][l] = (c+l)
         }
     }
 
     // Imprimindo a matriz
-    for(i=0; i<linhas;i++) {
-        for(c=0; c< colunas; c++) {
-            document.write(matriz[i][c]);
+    for(c=0; c<coluna;c++) {
+        for(l=0; l< linha; l++) {
+            document.write(matriz[c][l]);
     }
     document.write("<br>")
 }
