@@ -12,7 +12,7 @@ function validaProc() {
         }
     }
 
-    // Imprimeiro os dados da matriz
+    // Imprimindo os dados da matriz
     for(c=0; c<coluna;c++) {
         for(l=0; l< linha; l++) {
             document.write(matriz[c][l]+"&nbsp&nbsp")
