@@ -15,10 +15,10 @@ function validaProc() {
         for(l=0; l< linha; l++) {
             do{
             matriz[c][l] = parseInt(prompt("Informe o número da linha: " +(l+1)+ " | coluna: " +(c+1)));
-                if(matriz[c][l] == 0 || isNaN(matriz[c][l])) {
+                if(isNaN(matriz[c][l])) {
                     alert("Número inválido! Por favor, digite um  número válido.");
             }
-            } while (matriz[c][l] == 0 || isNaN(matriz[c][l]));
+            } while (isNaN(matriz[c][l]));
         }
     }
 
